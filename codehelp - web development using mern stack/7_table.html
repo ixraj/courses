@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+        body {
+            background-color: #252627;
+            color: #e3e6e8;
+            font-family: "Lato", sans-serif;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid #494d50;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 8px;
+        }
+
+        th {
+            background-color: #2d2e2f;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Table 1 -->
+    <!-- <table>
+        <thead>
+            <th>Student ID</th>
+            <th>Student Name</th>
+            <th>Gender</th>
+            <th>Age</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1234</td>
+                <td>Bill</td>
+                <td>Male</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>1235</td>
+                <td>John</td>
+                <td>Male</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>1236</td>
+                <td>Olivia</td>
+                <td>Female</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>1237</td>
+                <td>Mia</td>
+                <td>Female</td>
+                <td>19</td>
+            </tr>
+        </tbody>
+    </table> -->
+
+    <!-- <br><br><br> -->
+
+    <!-- Table 2 -->
+    <!-- <table>
+        <tr>
+            <td>Column 1</td>
+            <td>Column 2</td>
+            <td>Column 3</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Row 1 Cell 1</td>
+            <td>Row 1 Cell 2</td>
+            <td>Row 1 Cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 2 Cell 2</td>
+            <td>Row 2 Cell 3</td>
+        </tr>
+        <tr>
+            <td colspan="3">Row 3 Cell 1</td>
+        </tr>
+    </table> -->
+
+    <!-- <br><br><br> -->
+
+    <!-- Table 3 -->
+    <!-- <table>
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Full Name</th>
+                <th>Position</th>
+                <th>Salary</th>
+                <th>Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Bill Gates</td>
+                <td>Founder Microsoft</td>
+                <td>$1000</td>
+                <td rowspan="4">Company Founder</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Steve Jobs</td>
+                <td>Founder Apple</td>
+                <td>$1200</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Larry Page</td>
+                <td>Founder Google</td>
+                <td>$1100</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Mark Zuckeberg</td>
+                <td>Founder Facebook</td>
+                <td>$1300</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total Expense:</td>
+                <td colspan="2" style="text-align: center;">$4600</td>
+            </tr>
+        </tfoot>
+    </table> -->
+
+    <!-- <br><br><br> -->
+
+    <!-- Table 4 -->
+    <!-- <table>
+        <thead>
+            <tr>
+                <th>Country</th>
+                <th>State</th>
+                <th>City</th>
+                <th>Street</th>
+                <th>Male</th>
+                <th>Female</th>
+                <th>Others</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="8">1</td>
+                <td rowspan="4">Kerala</td>
+                <td rowspan="2">Cochin</td>
+                <td>New Street</td>
+                <td>500</td>
+                <td>600</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Main Street</td>
+                <td>300</td>
+                <td>288</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Trivandrum</td>
+                <td>Giru Street</td>
+                <td>500</td>
+                <td>600</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>TVK Street</td>
+                <td>500</td>
+                <td>600</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td rowspan="4">Maharashtra</td>
+                <td rowspan="2">Mumbai</td>
+                <td>Krisha Street</td>
+                <td>700</td>
+                <td>850</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Main Street</td>
+                <td>500</td>
+                <td>600</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Surath</td>
+                <td>New Street</td>
+                <td>500</td>
+                <td>600</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Billa Street</td>
+                <td>500</td>
+                <td>600</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td rowspan="2">2</td>
+                <td rowspan="2">Alaska</td>
+                <td rowspan="2">AKA Central</td>
+                <td>New Street</td>
+                <td>200</td>
+                <td>210</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Cross Street</td>
+                <td>1000</td>
+                <td>1050</td>
+                <td>10</td>
+            </tr>
+        </tbody>
+    </table> -->
+
+    <!-- <br><br><br> -->
+
+    <!-- Pratice Table 1 -->
+    <!-- <table>
+        <tbody>
+            <tr>
+                <td rowspan="3" style="width: 100px;"></td>
+                <td colspan="3" style="width: 400px; height: 40px;"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="width: 150px; height: 40px;"></td>
+                <td rowspan="2" style="width: 250px;"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="height: 40px"></td>
+            </tr>
+            <tr>
+                <td rowspan="2"></td>
+                <td rowspan="2"></td>
+                <td rowspan="2"></td>
+                <td style="height: 40px;"></td>
+            </tr>
+            <tr>
+                <td style="height: 40px;"></td>
+            </tr>
+            <tr>
+                <td rowspan="3"></td>
+                <td colspan="2" style="height: 40px;"></td>
+                <td rowspan="2"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="height: 40px;"></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td style="height: 40px;"></td>
+            </tr>
+            <tr>
+                <td style="height: 40px;"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table> -->
+
+    <!-- <br><br><br> -->
+
+    <!-- Pratice Table 2 -->
+    <!-- <table>
+        <thead>
+            <tr>
+                <th rowspan="3">Day</th>
+                <th colspan="3">Seminar</th>
+            </tr>
+            <tr>
+                <th colspan="2">Schedule</th>
+                <th rowspan="2">Topic</th>
+            </tr>
+            <tr>
+                <th>Begin</th>
+                <th>End</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Monday</td>
+                <td rowspan="2">8:00 a.m.</td>
+                <td rowspan="2">5:00 a.m.</td>
+                <td>Introduction to XML</td>
+            </tr>
+            <tr>
+                <td>Validity: DTD and Relax NG</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Tuesday</td>
+                <td>8:00 a.m.</td>
+                <td>11:00 a.m.</td>
+                <td rowspan="2">XPath</td>
+            </tr>
+            <tr>
+                <td>11:00 a.m.</td>
+                <td>2:00 p.m.</td>
+            </tr>
+            <tr>
+                <td>2:00 p.m.</td>
+                <td>5:00 p.m.</td>
+                <td>XSL Transformations</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>8:00 a.m.</td>
+                <td>12:00 p.m.</td>
+                <td>XSL Formatting Objects</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>9:00 a.m.</td>
+                <td>12:00 p.m.</td>
+                <td>XML Schema Design</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>9:00 a.m.</td>
+  
+                <td>1:00 p.m.</td>
+                <td>Advanced XSLT Techniques</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>10:00 a.m.</td>
+                <td>2:00 p.m.</td>
+                <td>XML Databases</td>
+            </tr>
+            <tr>
+                <td>Sunday</td>
+                <td>10:00 a.m.</td>
+                <td>12:00 p.m.</td>
+                <td>Restful Web Services with XML</td>
+            </tr>
+        </tbody>
+    </table> -->
+
+    <!-- <br><br><br> -->
+
+    <!-- Pratice Table 3  -->
+    <!-- <table>
+        <tr>
+            <td style="width: 200px; height: 40px;"></td>
+            <td style="width: 150px;"></td>
+            <td style="width: 150px;"></td>
+            <td style="width: 150px;"></td>
+        </tr>
+        <tr>
+            <td colspan="4" style="height: 40px;"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td colspan="2" style="height: 40px;"></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="height: 40px;"></td>
+            <td rowspan="3" colspan="2"></td>
+        </tr>
+        <tr>
+            <td style="height: 40px;"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="height: 40px;"></td>
+        </tr>
+        <tr>
+            <td colspan="4" style="height: 40px;"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td colspan="2" style="height: 40px;"></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="height: 40px;"></td>
+        </tr>
+        <tr>
+            <td colspan="4" style="height: 40px;"></td>
+        </tr>
+        <tr>
+            <td style="height: 40px;"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table> -->
+
+    <!-- <br><br><br> -->
+
+    <!-- Pratice Table 4 -->
+    <!-- <table>
+        <tbody>
+            <tr style="height: 70px;">
+                <td style="width: 120px;"></td>
+                <td style="width: 120px;" colspan="2"></td>
+                <td style="width: 120px;" colspan="3"></td>
+                <td style="width: 120px;" colspan="2"></td>
+                <td style="width: 120px;"></td>
+            </tr>
+            <tr style="height: 35px;">
+                <td colspan="3"></td>
+                <td colspan="6"></td>
+            </tr>
+            <tr style="height: 35px;">
+                <td colspan="6"></td>
+                <td colspan="3"></td>
+            </tr>
+            <tr style="height: 35px;">
+                <td colspan="3" rowspan="2"></td>
+                <td colspan="6"></td>
+            </tr>
+            <tr style=" height: 35px;">
+                <td colspan="6"></td>
+            </tr>
+            <tr style="height: 35px;">
+                <td colspan="2" rowspan="3"></td>
+                <td colspan="5"></td>
+                <td colspan="2" rowspan="3"></td>
+            </tr>
+            <tr style="height: 35px;">
+                <td colspan="5"></td>
+            </tr>
+            <tr style="height: 35px;">
+                <td colspan="5"></td>
+            </tr>
+            <tr style="height: 35px;">
+                <td colspan="3"></td>
+                <td colspan="3"></td>
+                <td colspan="3"></td>
+            </tr>
+            <tr style="height: 70px;">
+                <td></td>
+                <td colspan="2" rowspan="4"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td colspan="2" rowspan="4"></td>
+                <td></td>
+            </tr>
+            <tr style="height: 35px;">
+                <td></td>
+                <td colspan="3" rowspan="3"></td>
+                <td></td>
+            </tr>
+            <tr style="height: 35px;">
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style=" height: 35px;">
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="height: 35px;">
+                <td colspan="2"></td>
+                <td colspan="5"></td>
+                <td colspan="2"></td>
+            </tr>
+        </tbody>
+    </table> -->
+
+    <!-- <br><br><br> -->
+
+    <!-- Pratice Table 5 -->
+    <!-- <table>
+        <tbody>
+            <tr>
+                <td colspan="10" style="width: 150px; height: 15px;"></td>
+                <td colspan="9" style="width: 135px;"></td>
+                <td colspan="12" style="width: 180px;"></td>
+            </tr>
+            <tr>
+                <td colspan="13" rowspan="2" style="width: 195px; height: 30px;"></td>
+                <td colspan="10" style="width: 150px;"></td>
+                <td colspan="8" rowspan="2" style="width: 120px;"></td>
+            </tr>
+            <tr>
+                <td colspan="10" style="width: 150px;"></td>
+            </tr>
+            <tr>
+                <td colspan="8" style="width: 120px; height: 15px;"></td>
+                <td colspan="9" rowspan="3" style="width: 45px; height: 60px;"></td>
+                <td colspan="11" rowspan="2" style="width: 165px; height: 30px;"></td>
+                <td colspan="3" style="width: 45px;"></td>
+            </tr>
+            <tr>
+                <td colspan="8" style="width: 120px; height: 15px;"></td>
+                <td colspan="3" style="width: 45px;"></td>
+            </tr>
+            <tr>
+                <td colspan="8" style="width: 120px; height: 30px;"></td>
+                <td colspan="14" style="width: 210px;"></td>
+            </tr>
+            <tr>
+                <td colspan="6" rowspan="2" style="width: 90px; height: 30px;"></td>
+                <td colspan="9" rowspan="2" style="width: 135px;"></td>
+                <td colspan="5" rowspan="4" style="width: 75px;"></td>
+                <td colspan="11" style="width: 165px; height: 15px;"></td>
+            </tr>
+            <tr>
+                <td colspan="11" style="width: 165px; height: 15px;"></td>
+            </tr>
+            <tr>
+                <td colspan="3" rowspan="4" style="width: 45px; height: 60px;"></td>
+                <td colspan="9" style="width: 135px; height: 15px;"></td>
+                <td colspan="3" rowspan="2" style="width: 45px; height: 30px;"></td>
+                <td colspan="11" rowspan="2" style="width: 165px;height: 30px;"></td>
+            </tr>
+            <tr>
+                <td colspan="9" style="width: 135px; height: 15px;"></td>
+            </tr>
+            <tr>
+                <td colspan="6" rowspan="2" style="width: 90px; height: 30px;"></td>
+                <td colspan="3" rowspan="3" style="width: 45px;height: 45px;"></td>
+                <td colspan="13" style="width: 195px; height: 15px;"></td>
+                <td colspan="6" rowspan="3" style="width: 90px; height: 45px;"></td>
+            </tr>
+            <tr>
+                <td colspan="7" style="width: 105px; height: 15px;"></td>
+                <td colspan="6" style="width: 90px; height: 15px;"></td>
+            </tr>
+            <tr>
+                <td colspan="9" style="width: 135px; height: 15px;"></td>
+                <td colspan="10" style="width: 150px; height: 15px;"></td>
+                <td colspan="3" style="width: 45px;"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="width: 30px; height: 15px;"></td>
+                <td colspan="2" rowspan="3" style="width: 30px; height: 45px;"></td>
+                <td colspan="10" style="width: 150px;"></td>
+                <td colspan="17" rowspan="2" style="width: 255px; height: 30px;"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="width: 30px; height: 15px;"></td>
+                <td colspan="7" rowspan="2" style="width: 105px; height: 30px;"></td>
+                <td colspan="3" rowspan="4" style="width: 45px; height: 60px;"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="width: 30px; height: 15px;"></td>
+                <td colspan="7" rowspan="3" style="width: 105px; height: 45px;"></td>
+                <td colspan="3" style="width: 45px; height: 15px;"></td>
+                <td colspan="7" style="width: 105px; height: 15px;"></td>
+            </tr>
+            <tr>
+                <td colspan="2" rowspan="2" style="width: 30px; height: 30px;"></td>
+                <td colspan="9" style="width: 135px; height: 15px;"></td>
+                <td colspan="6" style="width: 90px; height: 15px;"></td>
+                <td colspan="4" style="width: 60px; height: 15px;"></td>
+            </tr>
+            <tr>
+                <td colspan="9" style="width: 135px; height: 15px;"></td>
+                <td colspan="10" style="width: 150px; height: 15px;"></td>
+            </tr>
+            <tr>
+                <td colspan="7" style="width: 105px; height: 30px;"></td>
+                <td colspan="9" style="width: 135px; height: 30px;"></td>
+                <td colspan="10" style="width: 150px; height: 30px;"></td>
+                <td colspan="4" rowspan="3" style="width: 60px; height: 30px;"></td>
+                <td style="width: 15px;"></td>
+            </tr>
+            <tr>
+                <td colspan="5" rowspan="4" style="width: 75px; height: 60px;"></td>
+                <td colspan="9" rowspan="2" style="width: 135px; height: 30px;"></td>
+                <td colspan="12" style="width: 180px; height: 15px;"></td>
+                <td rowspan="2" style="height: 30px;"></td>
+            </tr>
+            <tr>
+                <td colspan="12" style="width: 180px; height: 15px;"></td>
+            </tr>
+            <tr>
+                <td colspan="9" style="width: 135px; height: 15px;"></td>
+                <td colspan="15" rowspan="2" style="width: 225px; height: 30px;"></td>
+                <td colspan="2" rowspan="4" style="width: 30px; height: 60px;"></td>
+            </tr>
+            <tr>
+                <td colspan="9" style="width: 135px; height: 15px;"></td>
+            </tr>
+            <tr>
+                <td style="width: 15px; height: 15px;"></td>
+                <td colspan="13" rowspan="2" style="width: 195px; height: 30px;"></td>
+                <td colspan="4" style="width: 60px; width: 15px;"></td>
+                <td colspan="11" rowspan="2" style="width: 165px; height: 30px;"></td>
+            </tr>
+            <tr>
+                <td style="width: 15px; height: 15px;"></td>
+                <td colspan="4" style="width: 60px; height: 15px;"></td>
+            </tr>
+            <tr>
+                <td colspan="31" style="width: 465px; height: 15px;"></td>
+            </tr>
+        </tbody>
+    </table> -->
+
+    <!-- <br><br><br> -->
+
+    <!-- Coloured Table  -->
+    <!-- <table>
+        <tbody>
+            <tr>
+                <td rowspan="3" style="width: 100px; height: 120px;  background-color: #ff0000;"></td>
+                <td rowspan="2" style="width: 100px; height: 80px;  background-color: #ff0000;"></td>
+                <td colspan="2" style="width: 200px; background-color: #ff0000;"></td>
+                <td rowspan="3" style="width: 100px; background-color: #ff0000;"></td>
+                <td colspan="2" style="width: 200px; background-color: #ff0000;"></td>
+            </tr>
+            <tr>
+                <td style="background-color: #ffc000; width: 100px;"></td>
+                <td style="background-color: #ffc000; width: 100px;"></td>
+                <td style="background-color: #ffc000; width: 100px;"></td>
+                <td style="background-color: #ffc000; width: 100px;"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="height: 40px; background-color: #ffff00;"></td>
+                <td style="background-color: #ffff00;"></td>
+                <td style="background-color: #ffff00;"></td>
+                <td rowspan="3" style="background-color: #ffff00;"></td>
+            </tr>
+            <tr>
+                <td style="background-color: #00b050;"></td>
+                <td colspan="2" style="height: 40px; background-color: #00b050;"></td>
+                <td colspan="3" style="background-color: #00b050;"></td>
+            </tr>
+            <tr>
+                <td style="height: 40px; background-color: #00b0f0;"></td>
+                <td colspan="2" style="background-color: #00b0f0;"></td>
+                <td rowspan="2" style="background-color: #00b0f0;"></td>
+                <td colspan="2" style="background-color: #00b0f0;"></td>
+            </tr>
+            <tr>
+                <td style="height: 40px; background-color: #0070c0;"></td>
+                <td colspan="2" style="background-color: #0070c0;"></td>
+                <td colspan="3" style="background-color: #0070c0;"></td>
+            </tr>
+            <tr>
+                <td rowspan="4" style="height: 160px; background-color: #7030a0;"></td>
+                <td colspan="2" rowspan="2" style="height: 80px; background-color: #7030a0;"></td>
+                <td style="background-color: #7030a0; height: 40px;"></td>
+                <td colspan="3" style="background-color: #7030a0;"></td>
+            </tr>
+            <tr>
+                <td rowspan="3" style="background-color: #ff0000;"></td><td rowspan="3" colspan="3" style="background-color: #ff0000;"></td>
+            </tr>
+            <tr>
+                <td style="background-color: #ffc000; height: 40px; "></td>
+                <td style="background-color: #ffc000;"></td>
+            </tr>
+            <tr>
+                <td style="background-color: #ffff00; height: 40px;"></td>
+                <td style="background-color: #ffff00; height: 40px;"></td>
+            </tr>
+            <tr>
+                <td style="background-color: #00b050; height: 40px;"></td>
+                <td colspan="4" style="background-color: #00b050;"></td>
+                <td style="background-color: #00b050;"></td>
+                <td rowspan="2" style="background-color: #00b050;"></td>
+            </tr>
+            <tr>
+                <td colspan="3" style="background-color: #00b0f0; height: 40px ;"></td>
+                <td style="background-color: #00b0f0;"></td>
+                <td rowspan="2" style="background-color: #00b0f0;"></td>
+                <td rowspan="2" style="background-color: #00b0f0;"></td>
+            </tr>
+            <tr>
+                <td colspan="3" rowspan="5" style="background-color: #0070c0; height: 40px;"></td>
+                <td style="background-color: #0070c0;"></td>
+                <td style="background-color: #0070c0; height: 40px;"></td>
+            </tr>
+            <tr>
+                <td style="background-color: #7030a0; height: 40px;"></td>
+                <td style="background-color: #7030a0;"></td>
+                <td style="background-color: #7030a0;"></td>
+                <td style="background-color: #7030a0;"></td>
+            </tr>
+            <tr>
+                <td style="background-color: #ff0000; height: 40px;"></td>
+                <td style="background-color: #ff0000; height: 40px;"></td>
+                <td rowspan="2" colspan="2" style="background-color: #ff0000; height: 40px;"></td>
+            </tr>
+            <tr>
+                <td rowspan="3" style="background-color: #ffc000; height: 120px;"></td>
+                <td rowspan="3" style="background-color: #ffc000;"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="background-color: #ffc000;"></td>
+            </tr>
+            <tr>
+                <td style="background-color: #ffff00;"></td>
+                <td colspan="2" style="background-color: #ffff00;"></td>
+                <td colspan="2" style="background-color: #ffff00;"></td>
+            </tr>
+            <tr>
+                <td style="background-color: #00b050;height: 40px;"></td>
+                <td colspan="6" style="background-color: #00b050;"></td>
+            </tr>
+        </tbody>
+    </table> -->
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap");
+
+    body {
+      font-family: "Baloo Bhai 2", system-ui;
+    }
+
+    #login-page {
+      padding: 30px;
+      background-color: #f1f5f8;
+    }
+
+    .login-page {
+      background-color: #f1f5f8;
+      border: 1.2px solid #767676;
+      border-radius: 2px;
+    }
+
+    #html-form {
+      padding: 30px;
+      background-color: #f6fdf7;
+    }
+
+    .html-form {
+      background-color: #f6fdf7;
+      border: 1.2px solid #767676;
+      border-radius: 2px;
+    }
+
+    #form-example {
+      padding: 30px;
+      background-color: #f4edf5;
+    }
+
+    .form-example {
+      background-color: #f4edf5;
+      border: 1.2px solid #767676;
+      border-radius: 2px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Form 1 -->
+  <form id="login-page" action="/Login_Page">
+    <fieldset>
+      <legend>Login Page</legend>
+
+      <label for="email">Enter Email:</label>
+      <input class="login-page" type="email" id="email" placeholder="Enter your email here" required />
+
+      <br /><br />
+
+      <label for="password">Enter Password:</label>
+      <input class="login-page" type="password" id="password" placeholder="Enter your password here" required />
+
+      <br /><br />
+
+      <input type="submit" value="Submit" />
+    </fieldset>
+  </form>
+
+  <br />
+
+  <!-- Form 2 -->
+  <form id="html-form">
+    <fieldset>
+      <legend>Example of HTML Form</legend>
+
+      <label for="datepicker">Choose Date:</label>
+      <input class="html-form" type="date" id="datepicker" name="date" />
+
+      <br /><br />
+
+      <label for="selector1">Choose your Option:</label>
+      <select class="html-form" name="options" id="selector1">
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+      </select>
+
+      <br /><br />
+
+      <button type="submit">Submit</button>
+
+      <br /><br />
+
+      <textarea class="html-form" name="textArea1" id="textArea1" cols="80" rows="10"
+        placeholder="Enter text here..."></textarea>
+    </fieldset>
+  </form>
+
+  <br />
+
+  <!-- Form 3 -->
+  <form id="form-example">
+    <fieldset>
+      <legend>Form Example</legend>
+
+      <label for="textfield1">Text Field:</label>
+      <input class="form-example" type="text" name="textfield1" id="textfield1" />
+      <br /><br />
+
+      <label for="button1">Button:</label>
+      <input type="submit" name="button1" id="button1" value="Subscribe" />
+      <br /><br />
+
+      <label for="radio1">Male:</label>
+      <input type="radio" name="gender" id="radio1" value="Male" />
+
+      <label for="radio2">Female:</label>
+      <input type="radio" name="gender" id="radio2" value="Female" />
+
+      <label for="radio3">Prefer not to say:</label>
+      <input type="radio" name="gender" id="radio3" value="Prefer not to say" />
+      <br /><br />
+
+      <label for="checkbox1">English:</label>
+      <input type="checkbox" name="language" id="checkbox1" value="English" />
+
+      <label for="checkbox2">Hindi:</label>
+      <input type="checkbox" name="language" id="checkbox2" value="Hindi" />
+      <br /><br />
+
+      <label for="fileselect1">Upload:</label>
+      <input type="file" name="fileselect1" id="fileselect1" />
+      <br /><br />
+
+      <input type="image" name="imageButton1" id="imageButton1" alt="click here"
+        src="../assets/image/button.png" height="100px" width="100px" />
+      <br /><br />
+
+      <label for="password1">Enter Password:</label>
+      <input class="form-example" type="password" name="password1" id="password1" />
+      <br /><br />
+
+      <label for="datepicker1">Enter Date:</label>
+      <input class="form-example" type="date" name="datepicker1" id="datepicker1" />
+    </fieldset>
+  </form>
+</body>
+
+</html>

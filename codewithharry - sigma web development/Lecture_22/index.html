@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 12px;
+        }
+
+        .box {
+            box-sizing: border-box;
+            border: 1px solid black;
+            background-color: aquamarine;
+            /* width: 1920px; */
+            width: 80vw;
+            height: 10vh;
+            margin: auto;
+        }
+
+        .container {
+            box-sizing: border-box;
+            font-size: 18px;
+            border: 1px solid black;
+            background-color: aquamarine;
+            margin: 25px auto;
+            /* width: 1920px; */
+            width: 80vw;
+            /* height: 80vh; */
+            min-height: 80vh;
+        }
+
+        .container > div {
+            font-size: 1em;
+            width: 50%;
+            border: 1px solid blue;
+        }
+
+        .container > div > div {
+            font-size: 1em;
+            width: 50%;
+            border: 1px solid red;
+        }
+
+        .box3 {
+            background-color: aquamarine;
+            color: black;
+            box-sizing: border-box;
+            border: 1px solid black;
+            font-size: 22px;
+            width: 100vmin;
+            /* width: 100vmin; */
+            width: 80vw;
+            margin: 25px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units -->
+    <div class="box">
+        Lorem ipsum dolor sit amet.
+    </div>
+
+    <div class="container">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid mollitia possimus iste sunt soluta dicta
+            vel ad? Ex cupiditate nemo expedita neque exercitationem quisquam earum molestias. Praesentium suscipit
+            nesciunt voluptatum distinctio doloribus vitae tempora ex voluptas, eum atque necessitatibus dicta sequi
+            repellat cupiditate non iste libero dolore fugiat delectus aliquid nulla maiores. Cumque unde sint maxime!
+            <div>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore distinctio deleniti minus cumque natus quam consequuntur nesciunt esse, ea delectus voluptatum libero cum, praesentium sequi, quasi tenetur dolor ullam? Deserunt.
+            </div>
+        </div>
+    </div>
+
+    <div class="box3">
+        Lorem ipsum dolor sit amet.
+    </div>
+</body>
+
+</html>

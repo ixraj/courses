@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>forms_</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap");
+
+    body {
+      font-family: "Baloo Bhai 2", system-ui;
+    }
+
+    #registration {
+      padding: 30px;
+      background-color: #f1f5f8;
+    }
+
+    .registration {
+      background-color: #f1f5f8;
+      border: 1.2px solid #767676;
+      border-radius: 2px;
+    }
+
+    #application {
+      padding: 30px;
+      background-color: #f6fdf7;
+    }
+
+    .application {
+      background-color: #f6fdf7;
+      border: 1.2px solid #767676;
+      border-radius: 2px;
+    }
+
+    #information {
+      padding: 30px;
+      background-color: #f4edf5;
+    }
+
+    .information {
+      background-color: #f4edf5;
+      border: 1.2px solid #767676;
+      border-radius: 2px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Event Registration -->
+  <form id="registration">
+    <fieldset>
+      <legend>
+        <h2>Event Registration</h2>
+      </legend>
+
+      <form>
+        <label for="event-name">Name:</label>
+        <input class="registration" type="text" id="event-name" name="name" />
+        <br />
+        <br />
+
+        <label for="event-emailID">Email ID:</label>
+        <input class="registration" type="email" id="event-emailID" name="emailID" />
+        <br />
+        <br />
+
+        <label for="event-phoneNumber">Phone No:</label>
+        <input class="registration" type="tel" id="event-phoneNumber" name="phoneNumber" />
+        <br />
+        <br />
+
+        <label for="event-occupationType">Occupation:</label>
+        <select class="registration" name="occupationType" id="event-occupationType">
+          <option value="student">Student</option>
+          <option value="professional">Professional</option>
+          <option value="other">Other</option>
+        </select>
+        <br />
+        <br />
+
+        <fieldset>
+          <legend>Topics of Interest</legend>
+
+          <label for="event-checkbox1">HTML</label>
+          <input type="checkbox" name="checkbox" id="event-checkbox1" />
+
+          <label for="event-checkbox2">CSS</label>
+          <input type="checkbox" name="checkbox" id="event-checkbox2" />
+
+          <label for="event-checkbox3">JavaScript</label>
+          <input type="checkbox" name="checkbox" id="event-checkbox3" />
+        </fieldset>
+
+        <br />
+        <label for="event-textarea1">Comments:</label>
+        <br />
+        <br />
+        <textarea class="registration" name="textarea1" id="event-textarea1" cols="50" rows="10"></textarea>
+        <br />
+        <br />
+        <input type="submit" value="Register" />
+      </form>
+    </fieldset>
+  </form>
+
+  <br />
+
+  <!-- Job Application -->
+  <form id="application">
+    <fieldset>
+      <legend>
+        <h2>Job Application</h2>
+      </legend>
+
+      <form>
+        <label for="job-name">Name:</label>
+        <input class="application" type="text" id="job-name" name="name" />
+        <br />
+        <br />
+
+        <label for="job-emailID">Email ID:</label>
+        <input class="application" type="email" id="job-emailID" name="emailID" />
+        <br />
+        <br />
+
+        <label for="job-phoneNumber">Phone No:</label>
+        <input class="application" type="tel" id="job-phoneNumber" name="phoneNumber" />
+        <br />
+        <br />
+
+        <label for="job-fileUpload">Resume:</label>
+        <input type="file" name="fileUpload" id="job-fileUpload" />
+        <br />
+        <br />
+
+        <label for="job-counter">Experience (in years):</label>
+        <input class="application" type="number" name="counter" id="job-counter" min="0" max="50" />
+        <br />
+        <br />
+
+        <fieldset>
+          <legend>Skills</legend>
+          <input type="checkbox" name="checkbox" id="job-checkbox1" />
+          <label for="job-checkbox1">HTML</label>
+
+          <input type="checkbox" name="checkbox" id="job-checkbox2" />
+          <label for="job-checkbox2">CSS</label>
+
+          <input type="checkbox" name="checkbox" id="job-checkbox3" />
+          <label for="job-checkbox3">JavaScript</label>
+        </fieldset>
+        <br />
+
+        <label for="job-educationType">Highest Education:</label>
+        <select class="application" name="educationType" id="job-educationType">
+          <option value="a">A</option>
+          <option value="b">B</option>
+          <option value="c">C</option>
+          <option value="d">D</option>
+          <option value="e">E</option>
+        </select>
+        <br />
+        <br />
+
+        <fieldset>
+          <legend>Availability:</legend>
+
+          <label for="job-radio1">Full-Time</label>
+          <input type="radio" name="radio" id="job-radio1" />
+          <br />
+
+          <label for="job-radio2">Part-Time</label>
+          <input type="radio" name="radio" id="job-radio2" />
+          <br />
+        </fieldset>
+        <br />
+        <label for="job-textarea1">Additional Comments:</label>
+        <br />
+        <textarea class="application" name="textarea1" id="job-textarea1" cols="50" rows="10"></textarea>
+        <br />
+        <br />
+        <input type="submit" value="Submit Application" />
+      </form>
+    </fieldset>
+  </form>
+
+  <br />
+
+  <!-- Personal Information -->
+  <form id="information">
+    <fieldset>
+      <legend>
+        <h2>Personal Information</h2>
+      </legend>
+
+      <form>
+        <label for="personal-name">Name:</label>
+        <input class="information" type="text" id="personal-name" name="name" />
+        <br />
+        <br />
+
+        <label for="personal-emailID">Email ID:</label>
+        <input class="information" type="email" id="personal-emailID" name="emailID" />
+        <br />
+        <br />
+
+        <label for="personal-phoneNumber">Phone No:</label>
+        <input class="information" type="tel" id="personal-phoneNumber" name="phoneNumber" />
+        <br />
+        <br />
+
+        <label for="personal-dateOfBirth">Date of Birth:</label>
+        <input class="information" type="date" name="dateOfBirth" id="personal-dateOfBirth" />
+        <br />
+        <br />
+
+        <span>Gender:</span>
+        <input type="radio" name="gender" id="personal-radio1" />
+        <label for="personal-radio1">Male</label>
+
+        <input type="radio" name="gender" id="personal-radio2" />
+        <label for="personal-radio2">Female</label>
+        <br />
+        <br />
+
+        <label for="personal-country">Country:</label>
+        <select class="information" name="country" id="personal-country">
+          <option value="india">India</option>
+          <option value="us">United States</option>
+        </select>
+        <br />
+        <br />
+      </form>
+
+      <!-- Address -->
+      <fieldset>
+        <legend>Address</legend>
+
+        <form>
+          <label for="address-street">Street:</label>
+          <input class="information" type="text" name="street" id="address-street" />
+          <br />
+          <br />
+
+          <label for="address-city">City:</label>
+          <input class="information" type="text" name="city" id="address-city" />
+          <br />
+          <br />
+
+          <label for="address-state">State:</label>
+          <input class="information" type="text" name="state" id="address-state" />
+          <br />
+          <br />
+
+          <label for="address-code">Zip Code:</label>
+          <input class="information" type="text" name="code" id="address-code" />
+          <br />
+          <br />
+        </form>
+      </fieldset>
+
+      <!-- Other Information -->
+      <fieldset>
+        <legend>Other Information</legend>
+
+        <form>
+          <label for="other-textarea1">Comments:</label>
+          <br />
+          <textarea class="information" name="textarea1" id="other-textarea1" cols="50" rows="10"></textarea>
+          <br />
+          <br />
+
+          <label for="other-terms">I agree to the terms of service:</label>
+          <input type="checkbox" name="terms" id="other-terms" />
+          <br />
+          <br />
+
+          <input type="submit" value="Submit" />
+        </form>
+      </fieldset>
+    </fieldset>
+  </form>
+</body>
+
+</html>

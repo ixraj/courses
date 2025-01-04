@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: #f0e2ff;
+        } */
+
+        /* .box::first-line{
+            color: #94d80d;
+        } */
+
+        /* .boxes * {
+            color: #00008f;
+            border: 1px solid black;
+        }
+
+        [data-color="primary"] {
+            margin-top: 45px;
+        } */
+
+
+        /* .box:nth-last-child(1){
+            background-color: aqua;
+        } */
+
+        .boxes::before {
+            content: "Hello World! What's up?";
+            color: maroon;
+        }
+
+        .boxes::after {
+            content: "I am adding this at last.";
+            color: maroon;
+        }
+
+        ::selection {
+            color: aqua;
+            background-color: #98c8f3;
+        }
+
+        .box:first-letter {
+            color: peru;
+            font-size: 30px;
+        }
+
+        input::placeholder{
+            color: #2d2d35;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Lorem ipsum dolor sit amet.</div>
+        <div class="box">Lorem ipsum dolor sit amet.</div>
+        <div class="box">Lorem ipsum dolor sit amet.</div>
+        <input type="text" placeholder="Enter your Name Here:">
+    </div>
+</body>
+
+</html>

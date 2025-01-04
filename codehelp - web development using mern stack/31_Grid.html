@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grip Design</title>
+    <link rel="stylesheet" href="31_style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            background-color: #f0f8ff;
+        }
+
+        /* Part 1 */
+        .container {
+            width: 100%;
+            height: 100%;
+            padding: 4rem;
+            display: grid;
+            gap: 1rem;
+            /* grid-template-columns: repeat(2, 1fr); */
+            grid-template-columns: repeat(auto-fit, minmax(200px, 500px));
+        }
+
+        .item {
+            padding: 1rem;
+            border: 2px solid #4c56ff;
+            background-color: #e8f0fe;
+        }
+
+        /* Part 2 */
+
+        .structure {
+            width: 100%;
+            height: 100%;
+            display: grid;
+            gap: 1rem;
+            /* background-color: aqua; */
+            padding: 4rem;
+
+            grid-template-areas:
+                "header header header"
+                "sidebar content1 content1"
+                "sidebar content2 content3"
+                "footer  footer footer"
+            ;
+
+        }
+
+        .items {
+            font-size: 1.5rem;
+            border: 2px solid #d3d3d3;
+            padding: 1rem;
+            color: #2f4f4f;
+            font-family: "Baloo Bhai 2", sans-serif;
+            padding: 70px;
+        }
+
+        #header {
+            background-color: #add8e6;
+            grid-area: header;
+        }
+
+        #sidebar {
+            background-color: #afeeee;
+            grid-area: sidebar;
+        }
+
+        #content1 {
+            background-color: #f08080;
+            grid-area: content1;
+        }
+
+        #content2 {
+            background-color: #fafad2;
+            grid-area: content2;
+        }
+
+        #content3 {
+            background-color: #e6e6fa;
+            grid-area: content3;
+        }
+
+        #footer {
+            background-color: #ffe4e1;
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Part 1 of Code -->
+
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+        <div class="item">M</div>
+        <div class="item">N</div>
+        <div class="item">O</div>
+        <div class="item">P</div>
+    </div>
+
+
+    <!-- Part 2 of Code -->
+
+    <div class="structure">
+        <div class="items" id="header">Header</div>
+        <div class="items" id="sidebar">Sidebar</div>
+        <div class="items" id="content1">Content-1</div>
+        <div class="items" id="content2">Content-2</div>
+        <div class="items" id="content3">Content-3</div>
+        <div class="items" id="footer">Footer</div>
+    </div>
+
+</body>
+
+</html>

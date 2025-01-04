@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Universal Selector */
+        * {
+            background-color: #f7f9fc;
+            /* border: 1px solid #696969; */
+            /* padding: 20px; */
+        }
+
+        /* Element Selector */
+        div {
+            color: #006400;
+            background-color: #f0fff0;
+            padding: 10px;
+        }
+
+        /* Class Selector */
+        .class-selector {
+            color: #0000b8;
+            background-color: #ffede0;
+        }
+
+        /* ID Selector */
+        #id-selector {
+            color: #00d1d1;
+            background-color: #e0dcff;
+        }
+
+        /* Child Selector */
+        section > p {
+            color: #008080;
+            background-color: #ffecde;
+            padding: 15px;
+        }
+
+        /* Descendant Selector */
+        section p {
+            color: #008080;
+            background-color: #fff0e4;
+            padding: 15px;
+        }
+
+        /* Pseudo Selector */
+        a:visited {
+            color: green;
+        }
+
+        a:link {
+            color: blue;
+        }
+
+        a:active {
+            background-color: #00d1d1;
+        }
+
+        a:hover {
+            background-color: orange;
+        }
+
+        p:first-child {
+            background-color: violet;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="selector">
+        <p>This is Paragraph Tag 1 </p>
+        <p>This is Paragraph Tag 2 </p>
+    </main>
+    <div>
+        I am Div Tag { Element Selector }
+    </div>
+
+    <div class="class-selector">
+        I am Div Tag { Class Selector }
+    </div>
+
+    <div id="id-selector">
+
+        I am Div Tag { ID Selector }
+    </div>
+
+    <section>
+        <p>I am Paragraph Tag inside Section Tag { Child Selector }</p>
+    </section>
+
+
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.facebook1.com">Go to Facebook</a>
+</body>
+
+</html>
